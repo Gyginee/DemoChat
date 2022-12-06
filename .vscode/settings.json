@@ -1,0 +1,10 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "DemoChat",
+      "database": "${workspaceFolder:DemoChat}/Server/DemoChat.db"
+    }
+  ]
+}

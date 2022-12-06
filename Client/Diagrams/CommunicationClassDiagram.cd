@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Client.Services.Communication.CommunicationService">
+    <Position X="7.25" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAwABkCAAIAACAABACAAAEAAAQEAgACFAAAAIAAAoAQ=</HashCode>
+      <FileName>Services\Communication\CommunicationService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="store" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Client.Services.Communication.Store">
+    <Position X="7.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAQMAAAAAAAEAQAAAQAAAABAAAAAAIAABAZAAQA=</HashCode>
+      <FileName>Services\Communication\Store.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="tcpHandler" />
+      <Field Name="udpHandler" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Client.Services.Communication.States.State">
+    <Position X="3" Y="1.25" Width="2.5" />
+    <AssociationLine Name="store" Type="Client.Services.Communication.Store" FixedFromPoint="true">
+      <Path>
+        <Point X="5.5" Y="1.938" />
+        <Point X="7.5" Y="1.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAGAAAAAAAAEAAAABAAAAAAAAggA=</HashCode>
+      <FileName>Services\Communication\States\State.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="store" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Client.Services.Communication.States.ContactState">
+    <Position X="2.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAEAAAAAAAAAAAAAggA=</HashCode>
+      <FileName>Services\Communication\States\ContactState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.Services.Communication.States.GroupState">
+    <Position X="4.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAEAAAAAAAAAAAAAggA=</HashCode>
+      <FileName>Services\Communication\States\GroupState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CrossLibrary.Network.ProtocolHandler&lt;TStore&gt;">
+    <Position X="13" Y="1.25" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Client.Services.Network.TcpHandler">
+    <Position X="13.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAABAAAAAAAAAQAAAAJAAAAAAABAAAA=</HashCode>
+      <FileName>Services\Network\TcpHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client.Services.Network.UdpHandler">
+    <Position X="10.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBABAAAIASgAgCAAAAgAQAAIABAAhJQSAAAAABAEBA=</HashCode>
+      <FileName>Services\Network\UdpHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CrossLibrary.Network.IProtocolService">
+    <Position X="10.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
